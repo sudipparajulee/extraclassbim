@@ -1,0 +1,25 @@
+.mytext{
+    color: #ffff00;
+    background-color: red;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.bg-red{
+    background-color: red;
+}
+
+.myheading{
+    background-color: yellow;
+    color: blue;
+    text-align: center;
+    /* padding: 50px 20px 100px 50px; */
+    /* padding-top: 50px;
+    padding-left: 50px;
+    padding-bottom: 100px;
+    padding-right: 20px; */
+    padding: 50px 100px;
+    margin: 20px;
+}
