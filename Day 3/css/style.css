@@ -1,0 +1,26 @@
+body{
+    font-family: sans-serif;
+}
+
+.mydiv{
+    display: flex;
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    justify-content: center;
+    /* align-items: flex-end; */
+    align-items: center;
+    height: 500px;
+    background-color: rgb(135, 153, 169);
+}
+
+.leftdiv{
+    /* flex: 1; */
+    background-color: red;
+    height: 100px;
+}
+
+.rightdiv{
+    /* flex: 2; */
+    background-color: blue;
+    height: 100px;
+}
