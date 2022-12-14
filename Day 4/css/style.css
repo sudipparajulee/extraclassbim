@@ -1,0 +1,41 @@
+body{
+    font-family: sans-serif;
+}
+
+.mygrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 50px;
+    padding: 50px 150px;
+}
+
+.grid-card{
+    background-color: aquamarine;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.grid-card img{
+    width: 100%;
+}
+
+@media screen and (max-width:1024px) {
+    .mygrid{
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 50px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .mygrid{
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .mygrid{
+        grid-template-columns: 1fr;
+    }
+}
