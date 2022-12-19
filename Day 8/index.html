@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <span class="menubtn" onclick="showHideMenu()">E</span>
+    <ul class="menu">
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">Login</a></li>
+    </ul>
+    <ul class="mob-menu" id="mob-menu">
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">Login</a></li>
+    </ul>
+    </nav>
+    <h1 id="mytext">This is my text</h1>
+    <button onclick="myFunction()">Click</button>
+    <button onclick="hideText()">Hide</button>
+    <button onclick="showText()">Show</button>
+    <button onclick="showHide()">Show/Hide</button>
+
+    <script>
+        function myFunction()
+        {
+            var mytext = document.getElementById('mytext');
+            // mytext.innerHTML = 'LICT';
+            mytext.style.backgroundColor = 'red';
+            mytext.style.color = 'white';
+        }
+
+        function hideText()
+        {
+            var mytext = document.getElementById('mytext');
+            mytext.style.display = 'none';
+        }
+
+        function showText()
+        {
+            var mytext = document.getElementById('mytext');
+            mytext.style.display = 'block';
+        }
+
+        function showHide(){
+            var mytext = document.getElementById('mytext');
+            if(mytext.style.display != 'none')
+            {
+                mytext.style.display = 'none';
+            }
+            else
+            {
+                mytext.style.display = 'block';
+            }
+        }
+
+        function showHideMenu()
+        {
+            var myvar = document.getElementById('mob-menu');
+            if(myvar.style.display != 'none')
+            {
+                myvar.style.display = 'none';
+            }
+            else
+            {
+                myvar.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

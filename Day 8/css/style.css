@@ -1,0 +1,58 @@
+body{
+    font-family: sans-serif;
+}
+
+.navbar{
+    background-color: blue;
+}
+
+.mob-menu{
+    display: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu{
+    padding: 15px;
+    text-align: right;
+}
+
+.menu li{
+    display: inline;
+    margin: 15px;
+}
+
+.mob-menu li{
+    margin: 14px;
+}
+
+.menu a, .mob-menu a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.menubtn{
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    border: 1px solid white;
+    padding: 10px;
+    margin: 5px;
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    .menubtn{
+        display: inline;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .mob-menu{
+        display: block;
+    }
+}
