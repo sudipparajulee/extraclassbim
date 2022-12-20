@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <span onclick="showLogin()" class="cancel">Login</span>
     <div class="mygrid">
         <div class="grid-card">
             <img src="image/team-3.jpg" alt="">
@@ -95,5 +96,31 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti at, vel quidem voluptas id nostrum, quis magni corporis error illo dolor ducimus aperiam, molestias ut esse vero nam molestiae laboriosam!</p>
         </div>
     </div>
+
+    <div class="login-popup" id="login-popup">
+        <form class="login-div">
+            <h2>Login</h2>
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <button type="submit">Login</button>
+            <span class="cancel" onclick="hideLogin()">X</span>
+        </form>
+    </div>
+
+
+
+    <script>
+        function showLogin()
+        {
+            document.getElementById('login-popup').style.display = 'block';
+        }
+
+        function hideLogin()
+        {
+            document.getElementById('login-popup').style.display = 'none';
+        }
+
+        
+    </script>
 </body>
 </html>

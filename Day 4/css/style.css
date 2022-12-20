@@ -19,6 +19,63 @@ body{
     width: 100%;
 }
 
+.login-popup{
+    background-color: rgba(44, 44, 70, 0.474);
+    backdrop-filter: blur(8px);
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+
+.login-div{
+    background-color: white;
+    width: 500px;
+    margin: auto;
+    margin-top: 150px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    position: relative;
+}
+
+.login-div input, .login-div button{
+    width: 96%;
+    display: block;
+    padding: 10px;
+    margin: 10px 0px;
+    border-radius: 8px;
+    border: 1px solid blue;
+}
+
+.cancel{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    padding: 10px;
+    /* border: 1px solid blue; */
+    border-radius: 8px;
+    background-color: aliceblue;
+}
+
+
+.login-div input:focus{
+    outline: none;
+    border: 2px solid blue;
+}
+
+.login-div button{
+    width: 40%;
+    margin: auto;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+
 @media screen and (max-width:1024px) {
     .mygrid{
         grid-template-columns: 1fr 1fr 1fr;
